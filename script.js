@@ -51,12 +51,12 @@ function tempChange() {
 
 function fahrenTOcel(temp) {
     temp -= 32;
-    temp = Math.floor(temp * 5/9) ;
+    temp = Math.round(temp * 5/9) ;
     return temp;
 }
 function celTOfahren(temp) {
     temp = parseInt(temp);
-    temp = Math.ceil(temp * 9/5);
+    temp = Math.round(temp * 9/5);
     temp += 32;
     return temp;
 }
